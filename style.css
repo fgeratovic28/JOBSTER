@@ -1,0 +1,706 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color:#282626;
+}
+
+.top-panel{
+    padding: 20px;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span{
+    color: #0000cc;
+}
+
+.name {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 3.333vh;
+}
+
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    margin: 7px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.nav-bar a{
+    font-size: 25px;
+    color: #e8e8f2;
+    text-decoration: none;
+    margin: 6px;
+    padding: 5px;
+    transition: 0.5s ease;
+}
+
+.nav-bar a:hover{
+    color: #0000cc;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.welcome img {
+    border-radius: 10px ;
+    width: 900px; 
+    height: 650px;
+  
+}
+
+.welcome-text {
+    margin: 20px;
+    text-align: center;
+    text-align: left;
+    animation: fadeIn 3s ease-in-out;
+}
+
+#welcome-text1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: 	#bef7ee ;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#welcome-text2 {
+    font-size: 25px;
+    color: #e8e8f2; 
+}
+
+.subscribe-form {
+    background-color:#000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.subscribe-form h1 {
+    color:#ccc;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+#button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#button:hover {
+    color: #000000;
+    background-color: #bef7ee;
+}
+
+
+.welcome2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #bef7ee;
+}
+
+.welcome2 img{
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+#welcome2-text1{
+    font-size: 50px;
+    color: #282626;
+}
+
+#welcome2-text2{
+    font-size: 25px;
+    color: #000000; 
+}
+
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+.services img{
+    width: 1500px;
+    height: 550px; 
+}
+
+.services h1{
+    color: #bef7ee;
+    font-size: 50px;
+}
+.services p{
+    color: #ccc;
+    font-size: 25px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #bef7ee;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#mail{
+    display: block;
+    margin: 20px;
+    font-size: 20px;
+    color:black ;
+    text-decoration: none;
+}
+
+#mail:hover{
+    font-size: 25px;
+    color: #0000cc;
+}
+.social-icons{
+    margin-bottom: 10px;
+}
+
+.social-icons a{
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.social-icons a i{
+    font-size: 25px;
+    color: #000000;
+}
+
+.social-icons a i:hover{
+    font-size: 30px;
+    color:#0000cc;
+    animation: fadeInHover 0.5s ease-in-out;
+}
+
+@keyframes fadeInHover{
+    0%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 0.6;
+    }
+}
+
+
+.instagram:hover{
+    color: pink !important;
+}
+.youtube:hover{
+    color: red !important;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.about img{
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+#about-text1{
+    font-size: 40px;
+    color: #bef7ee;
+}
+
+#about-text2{
+    color: white;
+    font-size: 20px;
+}
+
+.card-holder{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.card-holder .card{
+    width: 450px;
+    margin: 0px 30px;
+    height: 600px;
+    box-shadow: 0 2px 8px #0000cc;
+    border-radius: 25px;
+}
+
+.card{
+    animation: shadowPulse 3s ease-in-out infinite;
+}
+
+@keyframes shadowPulse{
+    0%{
+        box-shadow: 0 0 10px #0000cc;
+    }
+    50%{
+        box-shadow: 0 0 20px #170ad15c;
+    }
+    100%{
+        box-shadow: 0 0 10px #0000cc;
+    }
+}
+
+.card img{
+    width: 100%;    
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.card h2{
+    color: #bef7ee;
+    text-align: center;
+}
+
+.card p{
+    color: #e8e8f2;
+    text-align: center;
+}
+
+#map{
+    width: 100%;
+}
+
+.jobs-welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.jobs-welcome h1{
+    color: #bef7ee;
+    font-size: 50px;
+}
+
+.jobs-welcome p{
+    color:#ccc;
+    font-size: 25px;
+    text-align: center;
+}
+
+.jobs-card-holder{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+
+.jobs-card-holder .card{
+    width: 450px;
+    margin: 0px 30px;
+    height: 600px;
+    box-shadow: 0 2px 8px #0000cc;
+    border-radius: 25px;
+}
+
+.card a{
+    text-decoration: none;
+    color:#bef7ee;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #0000cc;
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.contact-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000000;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.contact-welcome img {
+    margin-left: 15px;
+    border-radius: 10px ;
+    width: 900px; 
+    height: 650px;
+}
+
+.contact-text {
+    text-align: left;
+     
+}
+
+#contact-text1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: 	#bef7ee ;
+}
+
+#contact-text2 {
+    text-align: center;
+    font-size: 25px;
+    color: #e8e8f2; 
+}
+
+#contact-text2:hover{
+    cursor: pointer;
+    color: #0000cc;
+    font-size: 30px;
+} 
+
+.contact-form {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 40px;
+    box-shadow: #0000cc 0px 1px 2px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 5px ;
+    animation: colorChange 3s linear infinite;
+}
+@keyframes colorChange {
+    0% {
+        background-color:#000000;
+    }
+    50% {
+        background-color: #0000cc;
+    }
+    100% {
+        background-color: #1f1c1c;
+    }
+}
+
+.contact-form h3{
+    color: #bef7ee;
+}
+
+.form {
+    width: 50%;
+    height: 100%;
+}
+
+.form h3 {
+    text-align: center;
+}
+
+.contact-icons {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.facebook:hover , .twitter:hover{
+    color: #0000cc !important;
+}
+
+.contact-icons a i {
+    color: #bef7ee;
+    margin: 0px 15px;
+}
+
+.input-fields {
+    color: #bef7ee;
+    width: 300px;
+    margin: 15px auto;
+}
+
+.input-fields input {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #0000cc;
+    border-radius: 20px;
+}
+
+.input-fields p {
+    margin: 5px;
+}
+
+.input-fields textarea {
+    width: 100%;
+    height: 120px;
+    border: 2px solid #0000cc;
+    border-radius: 20px;
+}
+
+.submit-btn {
+    margin: auto;
+    display: block;
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: #bef7ee;
+    border: 2px solid #0000cc;
+    background-color: #000000;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.submit-btn:hover {
+    background-color: #09b1db;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .top-panel {
+        padding: 10px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-bar a {
+        font-size: 18px;
+        margin: 2px;
+    }
+
+    .welcome img {
+        width: 100%;
+        height: auto;
+    }
+
+    .subscribe-form input {
+        width: 70%;
+    }
+
+    .welcome {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .welcome-text{
+        width:100%;
+        text-align: center;
+    }
+
+    #welcome-text1, #welcome-text2, 
+    #welcome2-text1, #welcome2-text2, 
+    .services h1, #about-text1, #about-text2,
+    .jobs-welcome h1, #mail, 
+    #contact-text1, #contact-text2,
+    .social-icons a i{
+        font-size: smaller;
+    }
+
+    .services p{
+        font-size: smaller;
+    }
+
+    .jobs-welcome p{
+        font-size: smaller;
+    }
+
+    .contact-welcome {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-welcome img{
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .contact-text{
+        width:100%;
+        text-align: center;
+    }
+
+     #contact-text2:hover{
+        font-size: small;
+    }
+
+    .card-holder{
+        width: auto;
+        height: auto;
+    }
+
+    .card-holder .card{
+        width: 100px;
+        height: 250px;
+        margin: 10px;
+    }
+    
+    .jobs-card-holder {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    .jobs-card-holder .card{
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+    }
+    
+    .jobs-card-holder .card img{
+        border-radius: 0px;
+    }
+
+    .card a{
+        width: 100px;
+    }
+
+    .card h2, p{
+        font-size: smaller;
+    }
+
+    .contact-form{
+        width: 100%;
+        height: 100%;
+        margin: 0 0;
+    }
+
+    .form{
+        width: 100%;
+        height: 100%;
+        margin: 2px 5px;
+    }
+
+    .input-fields{
+        width: 80%;
+        height: 50%;
+        margin: 10px;
+    }
+
+
+    .welcome2 img,
+    .services img,
+    .about img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media only screen and (min-width: 426px) and (max-width: 1024px) {
+    .top-panel {
+        padding: 10px;
+    }
+
+    .nav-bar a {
+        font-size: 18px;
+        margin: 2px;
+    }
+
+    .welcome img {
+        width: 80%;
+        height: auto;
+    }
+
+    .subscribe-form input {
+        width: 60%;
+    }
+
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .welcome-text{
+        text-align: center;
+    }
+
+    .contact-welcome {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .contact-welcome img{
+        width: 80%;
+        height: auto;
+    }
+
+    .contact-text{
+        text-align: center;
+    }
+
+    .card-holder .card{
+        width: 200px;
+        margin: 0px 30px;
+        height: 300px;
+    }
+
+    .jobs-card-holder{
+        height: auto;
+    }
+  
+    .jobs-card-holder .card{
+        margin: 10px;
+        width: 200px;
+        height: 400px;
+    }
+
+    .jobs-card-holder .card p{
+        font-size: small;
+    }
+
+    .welcome2 img,
+    .services img,
+    .about img{
+        width: 80%;
+        height: auto;
+    }
+}
+
+
